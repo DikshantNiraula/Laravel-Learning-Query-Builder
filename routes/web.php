@@ -18,5 +18,6 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-
+    
+Route::get('query-result', 'QueryTest\QueryController@index');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
